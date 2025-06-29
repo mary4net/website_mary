@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap');
+
+:root {
+  --tokyo-bg: #1a1b26;
+  --tokyo-bg-light: #24283b;
+  --tokyo-fg: #c0caf5;
+  --tokyo-fg-dark: #a9b1d6;
+  --tokyo-border: #414868;
+  --tokyo-accent: #7aa2f7;
+  --tokyo-green: #9ece6a;
+  --tokyo-cyan: #7dcfff;
+  --tokyo-red: #f7768e;
+  --tokyo-comment: #565f89;
+  --tokyo-highlight: #bb9af7; /* A nice purple for highlights */
+}
+
+body {
+  background-color: var(--tokyo-bg);
+  color: var(--tokyo-fg);
+  font-family: 'Fira Code', monospace;
+}
+
+.tokyo-night {
+  background-color: var(--tokyo-bg);
+}
+
+.navbar {
+  background-color: var(--tokyo-bg) !important;
+  border-bottom: 1px solid var(--tokyo-border);
+}
+
+.nav-brand-custom {
+  color: var(--tokyo-green) !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--tokyo-fg) !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--tokyo-accent) !important;
+}
+
+.main-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.profile-pic-custom {
+  width: 350px; /* Increased size */
+  height: 350px; /* Increased size */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--tokyo-accent);
+  box-shadow: 0 0 30px var(--tokyo-accent);
+}
+
+.lead-custom {
+  font-size: 1.2rem;
+  color: var(--tokyo-fg-dark);
+}
+
+.lead-custom p {
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--tokyo-highlight);
+  font-weight: 500;
+}
+
+h2 {
+  color: var(--tokyo-cyan);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text-accent {
+  color: var(--tokyo-red);
+}
+
+.card-custom {
+  background-color: var(--tokyo-bg-light);
+  border: 1px solid var(--tokyo-border);
+  border-radius: 8px;
+  color: var(--tokyo-fg);
+  transition: all 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  border-color: var(--tokyo-accent);
+}
+
+.card-custom .card-title {
+  color: var(--tokyo-accent);
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: var(--tokyo-fg-dark) !important;
+}
+
+.project-lang {
+  color: var(--tokyo-comment);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.coursework-title {
+  color: var(--tokyo-green);
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.course-pill {
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.grade-a {
+  background-color: rgba(158, 206, 106, 0.1);
+  border: 1px solid var(--tokyo-green);
+  color: var(--tokyo-green);
+}
+
+.grade-b {
+  background-color: rgba(122, 162, 247, 0.1);
+  border: 1px solid var(--tokyo-accent);
+  color: var(--tokyo-accent);
+}
+
+.grade-c {
+  background-color: rgba(86, 95, 137, 0.2);
+  border: 1px solid var(--tokyo-comment);
+  color: var(--tokyo-comment);
+}
+
+.grade-none {
+  background-color: transparent;
+  border: 1px solid var(--tokyo-border);
+  color: var(--tokyo-fg-dark);
+}
+
+.experience-list {
+  list-style-type: '» ';
+  padding-left: 1.5rem;
+}
+
+.skill-category {
+  color: var(--tokyo-green);
+  font-weight: 700;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.interests-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.interests-list li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  color: var(--tokyo-fg-dark);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  color: var(--tokyo-accent);
+  transform: translateX(5px);
+}
+
+.contact-item svg {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+}
+
+.footer-custom {
+  background-color: var(--tokyo-bg);
+  border-top: 1px solid var(--tokyo-border);
+  color: var(--tokyo-comment);
+}
