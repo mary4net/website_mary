@@ -8,13 +8,13 @@ import profilePic from './static/canada_mary.jpg';
 
 const courses = [
   { name: 'Artificial Intelligence', grade: 'A+' },
-  { name: 'Machine Learning', grade: 'A+' },
   { name: 'Computer Networks', grade: 'A' },
   { name: 'Operating Systems', grade: 'A-' },
   { name: 'Information Security', grade: 'A-' },
   { name: 'Software Design', grade: 'B+' },
   { name: 'Programming on the Web', grade: 'B+' },
   { name: 'Parallel Programming', grade: 'C+' },
+  { name: 'Machine Learning', grade: 'C+' },
   { name: 'Database', grade: 'N/A' },
   { name: 'Data Structures', grade: 'N/A' },
   { name: 'Principle of Programming Language', grade: 'N/A' },
